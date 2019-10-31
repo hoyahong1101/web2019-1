@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+	<meta charset="UTF-8">
+	<title>float</title>
+	<style>
+		*{margin: 0;padding:0;}
+		li{list-style:none}
+		ul{
+			background-color:pink;
+			width:600px;
+		}
+		ul:after{content:"";display:block;clear:both;}
+		ul > li{
+			float: left;
+			width:100px;
+			height: 100px;
+			background-color:skyblue;
+		}
+		
+	</style>
+</head>
+<body>
+	<ul>
+		<li>test1</li>
+		<li>test2</li>
+		<li>test3</li>
+		<li>test4</li>
+		<li>test5</li>
+	</ul>
+
+	<style>
+		.wrap{
+			width:610px;
+			
+			background-color:red;
+		}
+		.box{
+			width: 300px;
+			height: 500px;
+			background-color:blue;
+			float:left;
+		}
+		.clearfix:after{
+			content:"";
+			display: block;
+			clear: both;
+		}
+		
+	</style>
+
+	<div class="wrap clearfix">
+		<div class="box">box</div>
+		<div class="box">box</div>
+		<!-- <div class="nobox"></div> -->
+	</div>
+	<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloremque quos blanditiis tenetur sapiente rerum. Laudantium porro consequatur consequuntur dolor, mollitia aliquid, aut incidunt aliquam in laborum animi deserunt totam, repellat.</p>
+
+
+	<style>
+		div.boxafter{background-color:gray;}
+		div.boxafter:after{content:"안녕하세요";}
+		div.boxafter:before{content:"한성용";}
+	</style>
+
+	<div class="boxafter">
+		<h1>Lorem.</h1>
+		<p>test</p>
+	</div>
+	
+</body>
+</html>
