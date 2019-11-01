@@ -11,7 +11,7 @@
 			background-color:pink;
 			width:600px;
 		}
-		ul:after{content:"";display:block;clear:both;}
+		
 		ul > li{
 			float: left;
 			width:100px;
@@ -20,16 +20,6 @@
 		}
 		
 	</style>
-</head>
-<body>
-	<ul>
-		<li>test1</li>
-		<li>test2</li>
-		<li>test3</li>
-		<li>test4</li>
-		<li>test5</li>
-	</ul>
-
 	<style>
 		.wrap{
 			width:610px;
@@ -49,6 +39,17 @@
 		}
 		
 	</style>
+</head>
+<body>
+	<ul class="clearfix">
+		<li>test1</li>
+		<li>test2</li>
+		<li>test3</li>
+		<li>test4</li>
+		<li>test5</li>
+	</ul>
+
+	
 
 	<div class="wrap clearfix">
 		<div class="box">box</div>
