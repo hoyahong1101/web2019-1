@@ -7,8 +7,19 @@ header#main_header{}
 }
 #util_menu{
 	width:980px;margin:0 auto;
-	background-color:skyblue;
+	_background-color:skyblue;
 }
-#util_menu ul.util_wrap{}
-#util_menu ul.util_wrap li{float: left;}
-#util_menu ul.util_wrap li a{}
+#util_menu ul.util_wrap{
+	float: right;
+	/*width: 236px;margin-left:auto;*/
+}
+#util_menu ul.util_wrap li{
+	float: left;
+	padding:0 10px;
+	border-right:1px solid #ccc;
+}
+#util_menu ul.util_wrap li:first-child{border-left: 1px solid #ccc;}
+#util_menu ul.util_wrap li a{
+	display: block;line-height:30px;
+	text-align:center;
+}
