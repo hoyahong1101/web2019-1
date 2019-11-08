@@ -71,7 +71,7 @@ header#main_header>h1{
 
 
 /*visual icon*/
-#visual_icon{background-color:#ccc;}
+#visual_icon{background-color:#ccc;margin-bottom:30px;}
 #visual_icon .icon_wrap{width: 980px;margin:0 auto;}
 #visual_icon .icon_wrap li{
 	float: left;width:196px;height:196px;
@@ -85,3 +85,19 @@ header#main_header>h1{
 #visual_icon .card{padding:15px;_background-color:pink;}
 #visual_icon .card img{display: block;margin:0 auto;}
 #visual_icon .card .card-body{text-align:center;padding-top:10px;color:white;}
+
+/*section wrap1*/
+#secWrap1{
+	width: 980px;margin:0 auto;
+	margin-bottom:30px;
+}
+#secWrap1 li{
+	float: left;width: 310px;margin-right:25px; /*980-310*3 = 50px / 2 = 25px*/
+}
+#secWrap1 li:last-child{margin-right:0;}
+#secWrap1 li .card-body{
+	padding:10px 20px;
+	border: 1px solid #ccc;
+	border-top:none;
+}
+#secWrap1 li img{display: block;}
