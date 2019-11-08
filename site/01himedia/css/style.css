@@ -96,8 +96,47 @@ header#main_header>h1{
 }
 #secWrap1 li:last-child{margin-right:0;}
 #secWrap1 li .card-body{
-	padding:10px 20px;
+	padding:20px 20px;
 	border: 1px solid #ccc;
 	border-top:none;
 }
 #secWrap1 li img{display: block;}
+
+
+
+/*section02*/
+	#secWrap2{width: 980px;margin:0 auto;margin-bottom:50px;}
+	#secWrap2>ul>li{width: 310px;height: 165px;float:left;margin-right:25px;border:1px solid #dddddd;}
+	#secWrap2>ul>li:last-child{margin-right:0;}
+	#secWrap2>ul>li>div.card{position:relative;overflow:hidden;}
+	#secWrap2>ul>li>div.card>img{position: absolute;right:-10px;top: 10px;}
+	#secWrap2>ul>li>div.card>div.card-body{padding:20px 0 0 15px;position: relative;}
+	#secWrap2>ul>li>div.card>div.card-body>h3.card-title{margin-bottom:10px;}
+	#secWrap2>ul>li>div.card>div.card-body>p.card-text{margin-bottom:20px;color:#9a9a9a;font-size:0.8em;}
+	#secWrap2>ul>li>div.card>div.card-body>p.card-link{color:#4c8ddd;font-size:0.8em;}
+
+/*footer*/
+	footer#main_footer{height: 147px;background-color:#5e5e5e;}
+
+	footer#main_footer>div.footer01_wrap{height: 43px;background-color:#4d4d4d;}
+	footer#main_footer>div.footer01_wrap>div.footer01{width: 980px;margin:0 auto;}
+	footer#main_footer>div.footer01_wrap>div.footer01>ul>li{float:left;position: relative;}
+	footer#main_footer>div.footer01_wrap>div.footer01>ul>li:after{
+		content:"";width: 1px;height: 15px;background-color:#717171;display:block;position: absolute;top:15px;
+	}
+	footer#main_footer>div.footer01_wrap>div.footer01>ul>li:first-child:after{content:"";display:none;}
+	footer#main_footer>div.footer01_wrap>div.footer01>ul>li>a{
+		padding:0 30px;
+		display:block;
+		font-size:0.8em;
+		line-height: 43px;
+		color:#cdcdcd;
+		font-weight:bold;
+	}
+	footer#main_footer>div.footer01_wrap>div.footer01>ul>li:first-child>a{padding-left: 0;}
+
+	footer#main_footer>div.footer02{width: 980px;height: 105px;margin:0 auto;}
+	footer#main_footer>div.footer02>h3.footer_logo,address{float:left;}
+	footer#main_footer>div.footer02>h3.footer_logo{display:block;color:white;line-height:105px;}
+	address{font-style:normal;}
+	footer#main_footer>div.footer02>address>p.footer_text{display:block;color:#cdcdcd;font-size:0.8em;padding:15px 0 15px 65px;}
