@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+	<meta charset="UTF-8">
+	<title>bxslider</title>
+	<link rel="stylesheet" href="css/reset.css">
+	<link rel="stylesheet" href="css/jquery.bxslider.css">
+	<script src="js/jquery-3.1.1.min.js"></script>
+	<script src="js/jquery.bxslider.js"></script>
+	<script>
+		$(document).ready(function(){
+			$(".slider").bxSlider({
+				auto:true,
+				pagerCustom:".bx-pager"
+			});
+		});
+	</script>
+	<style>
+		.wrapper{width: 1260px;margin:0 auto;position: relative;}
+		.bx-wrapper{
+		    -moz-box-shadow: none;
+		    -webkit-box-shadow: none;
+		    box-shadow: none;
+		    border: none;
+		    background: #fff;
+		    margin-bottom:0;
+		}
+		.slider_pager{
+			position: absolute;width: 100%;
+			bottom:20px;
+		}
+		.bx-pager{}
+		.bx-pager a{
+			width:25%;display: block;
+			background-color:#f00;
+			float:left;line-height:40px;
+			text-align: center;color:white;
+		}
+		.bx-pager a:hover{background-color: #00f;}
+		.bx-pager a.active{background-color: #00f;}
+		.sliderWrap li .txtWrap{
+			_background-color: #ff0;
+			position: absolute;
+			width:500px;
+			height:100px;
+			top:180px;right:100px;
+			color:white;
+		}
+		.sliderWrap li .txtWrap h2{font-size:2.3em;margin-bottom:15px;}
+		.sliderWrap li .txtWrap h2:after{
+			content:"";width:300px;height:2px;background-color: #f00;
+			display: block;margin-top:15px;
+		}
+		.sliderWrap li .txtWrap p{margin-bottom:15px;}
+		.sliderWrap li .txtWrap .btn{
+			width:200px;line-height:40px;text-align: center;
+			border: 1px solid #fff;cursor:pointer;transition:0.3s;
+			border-radius:20px;background-color:rgba(0,0,0,0.3);font-weight:bold;
+		}
+		.sliderWrap li .txtWrap .btn:hover{background-color: #fff;color:orange;}
+	</style>
+</head>
+<body>
+	<div class="wrapper">
+		<div class="sliderWrap">
+			<ul class="slider">
+				<li class="sliderView1">
+					<img src="images/main_slider01.jpg" alt="slider1">
+					<div class="txtWrap">
+						<h2>사랑과 행복을 나누는 마음1</h2>
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nobis, iusto.</p>
+						<div class="btn">바로가기</div>
+					</div>
+				</li>
+				<li>
+					<img src="images/main_slider01.jpg" alt="slider2">
+					<div class="txtWrap">
+						<h2>사랑과 행복을 나누는 마음2</h2>
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nobis, iusto.</p>
+						<div class="btn">바로가기</div>
+					</div>
+				</li>
+				<li>
+					<img src="images/main_slider01.jpg" alt="slider3">
+					<div class="txtWrap">
+						<h2>사랑과 행복을 나누는 마음3</h2>
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nobis, iusto.</p>
+						<div class="btn">바로가기</div>
+					</div>
+				</li>
+				<li>
+					<img src="images/main_slider01.jpg" alt="slider4">
+					<div class="txtWrap">
+						<h2>사랑과 행복을 나누는 마음4</h2>
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nobis, iusto.</p>
+						<div class="btn">바로가기</div>
+					</div>
+				</li>
+			</ul>
+		</div>
+		<div class="slider_pager">
+			<div class="bx-pager clearfix">
+				<a href="#" data-slide-index="0">menu1</a>
+				<a href="#" data-slide-index="1">menu2</a>
+				<a href="#" data-slide-index="2">menu3</a>
+				<a href="#" data-slide-index="3">menu4</a>
+			</div>
+		</div>
+	</div>
+	
+</body>
+</html>
