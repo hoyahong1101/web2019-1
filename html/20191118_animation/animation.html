@@ -4,6 +4,7 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=Edge">
 	<meta charset="UTF-8">
 	<title>animation</title>
+	<link rel="stylesheet" href="../css/reset.css">
 	<style>
 		div.btn01{
 			width: 200px;
@@ -115,6 +116,84 @@
 		<div class="txt">더보기</div>
 		<div class="bar"></div>
 	</div>
+
+	<style>
+		.card01{
+			width: 300px;height: 300px;
+			background-color:pink;
+			overflow: hidden;
+			position: relative;
+			border-radius:30px;
+		}
+		.card01 img{
+			display: block;
+			transform:scale(1,1);
+			transition:0.3s;
+		}
+		.card01 .card-body{
+			width: 100%;height:100%;
+			background-color:rgba(0,0,0,0.5);
+			color:white;font-weight:bold;
+			text-align: center;
+			position: absolute;
+			top:0px;left:-300px;transition:0.3s;
+			
+		}
+		.card01 .card-body .card-txt{
+			width:100%;
+			position: absolute;
+			top:50%;margin-top:-10px;
+		}
+		.card01:hover .card-body{top:0;left:0;}
+		.card01:hover img{transform:scale(1.2,1.2);}
+
+		li{float: left;}
+	</style>
+	
+	
+
+	<ul>
+		<li>
+			<div class="card01">
+				<img src="../images/testimg.jpg" alt="">
+				<div class="card-body">
+					<div class="card-txt">
+						파리여행
+					</div>
+				</div>
+			</div>
+		</li>
+		<li>
+			<div class="card01">
+				<img src="../images/testimg.jpg" alt="">
+				<div class="card-body">
+					<div class="card-txt">
+						파리여행
+					</div>
+				</div>
+			</div>
+		</li>
+		<li>
+			<div class="card01">
+				<img src="../images/testimg.jpg" alt="">
+				<div class="card-body">
+					<div class="card-txt">
+						파리여행
+					</div>
+				</div>
+			</div>
+		</li>
+		<li>
+			<div class="card01">
+				<img src="../images/testimg.jpg" alt="">
+				<div class="card-body">
+					<div class="card-txt">
+						파리여행
+					</div>
+				</div>
+			</div>
+		</li>
+	</ul>
 
 
 	
