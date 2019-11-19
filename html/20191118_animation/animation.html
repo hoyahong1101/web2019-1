@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+	<meta charset="UTF-8">
+	<title>animation</title>
+	<style>
+		div.btn01{
+			width: 200px;
+			height: 40px;
+			background-color:skyblue;
+			border-radius:20px;
+			position: relative;
+			overflow: hidden;
+		}
+		div.btn01 .txt{
+			width: 200px;
+			height: 40px;
+			text-align: center;
+			line-height:40px;
+			font-weight:bold;
+			position: relative;
+		}
+		div.btn01 .bar{
+			width: 100%;
+			height: 40px;
+			background-color: #00f;
+			position: absolute;
+			bottom:0;
+			animation-name: bar01;
+			animation-duration:0.5s
+		}
+		@keyframes bar01{
+			from{width: 0;}
+			to{width:100%;}
+		}
+
+
+		div.btn02{
+			width: 200px;
+			height: 40px;
+			background-color:pink;
+			border-radius:20px;
+			position: relative;
+			overflow: hidden;
+			cursor:pointer;
+		}
+		div.btn02 .txt{
+			width: 200px;
+			height: 40px;
+			text-align: center;
+			line-height:40px;
+			font-weight:bold;
+			position: relative;
+			z-index:1;
+		}
+		div.btn02 .bar{
+			width: 0;
+			height: 5px;
+			background-color: #00f;
+			position: absolute;
+			bottom:0;right:0;transition:0.3s;
+
+		}
+		div.btn02:hover .bar{
+			width:100%;
+		}
+
+
+		div.btn03{
+			width: 200px;
+			height: 40px;
+			background-color:gray;
+			border-radius:20px;
+			position: relative;
+			overflow: hidden;
+			cursor:pointer;
+		}
+		div.btn03 .txt{
+			width: 200px;
+			height: 40px;
+			text-align: center;
+			line-height:40px;
+			font-weight:bold;
+			position: relative;
+			z-index:1;
+		}
+		div.btn03 .bar{
+			width:100%;
+			height: 5px;
+			background-color: #00f;
+			position: absolute;
+			bottom:0;
+			transform:scaleX(0);
+			transition:0.3s;
+		}
+		div.btn03:hover .bar{
+			transform:scaleX(1);
+		}
+	</style>
+</head>
+<body>
+	<div class="btn01">
+		
+		<div class="bar"></div>
+		<div class="txt">더보기</div>
+	</div>
+
+	<div class="btn02">
+		<div class="txt">더보기</div>
+		<div class="bar"></div>
+	</div>
+
+	<div class="btn03">
+		<div class="txt">더보기</div>
+		<div class="bar"></div>
+	</div>
+
+
+	
+</body>
+</html>
