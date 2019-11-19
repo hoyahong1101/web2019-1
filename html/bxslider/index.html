@@ -6,9 +6,11 @@
 	<title>bxslider</title>
 	<link rel="stylesheet" href="css/reset.css">
 	<link rel="stylesheet" href="css/jquery.bxslider.css">
+	<link rel="stylesheet" href="css/colorbox.css">
 	<!-- script:src -->
 	<script src="js/jquery-3.1.1.min.js"></script>
 	<script src="js/jquery.bxslider.js"></script>
+	<script src="js/jquery.colorbox-min.js"></script>
 	<script>
 		$(document).ready(function(){
 
@@ -23,6 +25,13 @@
 				mySlider.goToNextSlide();
 			});
 
+
+			$(".pop").colorbox({rel:"pop"});
+			$(".youtube").colorbox({
+				iframe:true,
+				innerWidth:"560px",
+				innerHeight:"315px"
+			});
 
 		});
 	</script>
@@ -61,6 +70,14 @@
 		<div class="prevBtn"><img src="images/btn_pre.png" alt=""></div>
 		<div class="nextBtn"><img src="images/btn_next.png" alt=""></div>
 	</div>
+
+	<a href="images/pc01.jpg" class="pop" title="사진01"><img src="images/pc01.jpg"></a>
+	<a href="images/pc02.jpg" class="pop" title="사진02"><img src="images/pc02.jpg"></a>
+	<a href="images/pc03.jpg" class="pop" title="사진03"><img src="images/pc03.jpg"></a>
+
+	<a href="https://www.youtube.com/embed/xxuutpeG6NI" class="youtube" title="영상01"><img src="images/pc01.jpg"></a>
+
+	
 
 
 </body>
