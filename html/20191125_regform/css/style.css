@@ -34,7 +34,9 @@ body{background-color: #cdcdcd;}
 .container .field{
 	position: relative;
 	border-bottom:1px solid #f0f0f0;
+	height:50px;
 }
+
 .container .inp-field{
 	width: 350px;height: 49px;
 	border:0 none;color:#999;
