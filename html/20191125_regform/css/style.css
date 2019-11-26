@@ -39,7 +39,7 @@ body{background-color: #cdcdcd;}
 	border:0 none;color:#999;
 	font-size:14px;
 	text-indent:12px;
-}
+} 
 .container .ico{
 	position: absolute;
 	display: block;
@@ -75,6 +75,26 @@ body{background-color: #cdcdcd;}
 .container .field.radio label.male{left:15px;}
 .container .field.radio label.female{right:15px;}
 
+.container .field.birth label{
+	float: left;
+	width: 53px;height: 49px;line-height:49px;
+	background-color: #aaa;text-align: center;
+}
+.container .field.birth input{float: left;}
+
+.container .field.birth .field-wall{
+	float: left;
+	width:0;height: 29px;
+	border-right: 1px solid #aaa;
+	margin-top:10px;text-indent:-9999px;
+}
+
+.container .field.birth select{
+	float: left;
+}
+
 
 
 .w458{width: 458px !important}
+.w130{width: 130px !important}
+.w145{width: 145px !important}
