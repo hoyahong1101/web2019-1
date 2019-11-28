@@ -5,6 +5,16 @@
 	<meta charset="UTF-8">
 	<title>arrow</title>
 	<link rel="stylesheet" href="../../html/css/reset.css">
+		<link rel="stylesheet" href="css/jquery.bxslider.css">
+	<!-- script:src -->
+	<script src="js/jquery-3.1.1.min.js"></script>
+	<script src="js/jquery.bxslider.js"></script>
+	<script>
+		$(document).ready(function(){
+			$(".slider").bxSlider();
+		});
+	</script>
+
 	<style>
 		img{display: block;}
 		.box{
@@ -85,8 +95,29 @@
 		.pl20{padding-left: 20px !important;}
 		.pl40{padding-left: 40px !important;}
 
+		.container>ul>li:nth-child(3){position: relative;}
+		.container>ul>li:nth-child(3) ul.slider li{height:315px;}
+
+		.container>ul>li:nth-child(3) h2{position: absolute;top:20px;z-index:1;}
+		.container>ul>li:nth-child(3) ul.slider li .left,
+		.container>ul>li:nth-child(3) ul.slider li .right
+		{height:315px;position: absolute;top:0;}
+
+		.container>ul>li:nth-child(3) ul.slider li .left{
+			left:0;padding-top:40px;padding-left:35px;
+		}
+		.container>ul>li:nth-child(3) ul.slider li .right{right:0;}
+
+		.bx-wrapper{
+		    -moz-box-shadow: none;
+		    -webkit-box-shadow: none;
+		    box-shadow: none;
+		    border: none;
+		    background: #fff;
+		    margin-bottom:0;
+		}
 	</style>
-</head>
+</head>s
 <body>
 	<div class="box">
 		<!-- before -->
@@ -114,7 +145,24 @@
 
 
 			</li>
-			<li class="double"></li>
+			<li class="double">
+				<h2>뉴스</h2>
+				<ul class="slider">
+					<li>
+						<div class="left">
+									초중생에 장학금01<br>6억4천만원 지원 및 초청행사 진행...
+						</div>
+						<div class="right"><img src="images/img01_02.jpg" alt="img2"></div>
+					</li>
+					<li>
+						<div class="left">
+									초중생에 장학금01<br>6억4천만원 지원 및 초청행사 진행...
+						</div>
+						<div class="right"><img src="images/img01_02.jpg" alt="img2"></div>
+					</li>
+				</ul>
+
+			</li>
 			<li></li>
 			<li></li>
 			<li class="double bg1st pl40">
